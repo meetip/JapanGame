@@ -41,11 +41,9 @@ export class LostPage {
         {'Content-Type': 'application/json' 
     });
     let options = new RequestOptions({ headers: headers });    
-    let postParams = {
-        params :{
-          content: staticVocab,
-      }
-    }
+    let postParams = {        
+          content: staticVocab
+          }
 
     return new Promise((resolve, reject) => {
       this.http.post(this.urlStatic,postParams,options)

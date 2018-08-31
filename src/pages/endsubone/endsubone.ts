@@ -177,9 +177,8 @@ export class EndsubonePage {
     });
     let options = new RequestOptions({ headers: headers });    
     let postParams = {
-        params :{
-          content: staticVocab,
-      }
+       
+          content: staticVocab
     }
 
     return new Promise((resolve, reject) => {
@@ -207,9 +206,9 @@ export class EndsubonePage {
     });
     let options = new RequestOptions({ headers: headers });    
     let postParams = {
-        params :{
-          content: scoreForSave,
-      }
+         
+          content: scoreForSave
+       
     }
 
     return new Promise((resolve, reject) => {
